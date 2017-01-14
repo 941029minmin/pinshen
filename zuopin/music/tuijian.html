@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+   		<title>yueku</title>
+	    <script type="text/javascript" src="js/iscroll.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+        <script src="js/swiper.animate1.0.2.min .js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+        	 var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', {
+                bounceEasing: 'elastic',
+                bounceTime: 1200 ,
+                mouseWheel:true,
+                bounce:true
+            });
+        }
+
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+        </script>
+	</head>
+	<body onload="loaded()">
+		<div id="header">
+			<ul>
+				<li class="iconfont menu"><a href="bofang.html" style="color: #fff;">&#xe607;</a></li>
+				<li class="logo"></li>
+				<li class="iconfont search"><a href="" style="color: #fff;">&#xe600;</a></li>
+			</ul>
+		</div>
+		<div id="wrapper">
+    		<div id="scroller">
+    			 <ul class="lis">
+				    <li class=""><a href="index.html">首页</a></li>
+				    <li class=""><a href="yueku.html">乐库</a></li>
+				    <li class="actives"><a href="tujian.html">推荐</a></li>
+				    <li class=""><a href="zuijin.html">最近</a></li>
+				</ul>
+				<div class="ep"><div class="iconfont">&#xe783;</div></div>
+				<div class="ep"><div class="iconfont">&#xe783;</div></div>
+				<div class="ep"><div class="iconfont">&#xe783;</div></div>
+				<div class="ep"><div class="iconfont">&#xe783;</div></div>
+				<div class="ep"><div class="iconfont">&#xe783;</div></div>
+    		</div>
+		</div>
+		<div id="footer">
+		<div class="jindu">
+			<div class="dian"></div>
+		</div>
+		<div class="fo-left"></div>
+		<div class="fo-right">
+			<div class="iconfont">&#xe644;</div>
+			<div class="iconfont stop">&#xe783;</div>
+			<div class="iconfont">&#xe606;</div>
+		</div>
+	</div>
+	</body>
+</script>
+</html>
